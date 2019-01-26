@@ -1,0 +1,84 @@
+* {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.container {
+    margin-top: 40px;
+    border: 1px solid blue;
+    padding: 18px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column-reverse;
+    /* align-items: center; */
+    margin: 10vh 5%;
+    user-select: none;
+
+}
+
+i {
+    color: #ccc
+}
+
+.flex.wrapper {
+    display: none;
+}
+
+.flex.wrapper.active {
+    display: flex;
+
+}
+
+input[type=radio] {
+    visibility: hidden;
+    display: none;
+}
+
+input[type=radio]+span {
+    user-select: none;
+}
+
+input[type=radio]+label {
+    cursor: pointer;
+}
+
+input[type=radio]:checked+label {
+    color: blue;
+    cursor: default;
+
+}
+
+.toolbar {
+    user-select: none;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.toolbar div {
+    margin: 0 35px;
+}
+
+.toolbar:hover .water {
+    color: black
+}
+
+.water {
+    color: #fee
+}
+
+.btn-inner__text {
+    cursor: move;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+.btn-inner__text:active {
+    cursor: grabbing !important;
+    cursor: -moz-grabbing !important;
+    cursor: -webkit-grabbing !important;
+}
